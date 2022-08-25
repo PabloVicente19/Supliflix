@@ -21,10 +21,11 @@ html{
     background-color: var(--header);
     width: 100%;
     margin: 0 auto;
-    height: 50px;
+    height: 50px; 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
     gap: 20px;
 }
 .navbar-logo{
@@ -45,9 +46,8 @@ html{
     letter-spacing: 1px;
     color: #FFF;
 }
-.form-buscar input{
-    border: 0;
-    outline: 1px solid;
+.form-buscar{
+
 }
 
 .login{
@@ -107,17 +107,52 @@ html{
 /* CONTACTO */
 .contacto-contenedor{
     max-width: 1024px;
-    margin: 0 auto;    
+    margin: 20px auto;    
     background-color: var(--header);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.texto{
+    padding: 15px;
+}
+.texto h2, p{
+    margin: 10px;
+    font-size: 1.4rem;
 }
 .contacto{
     max-width: 1024px;
     margin: 0  auto;
     margin: 20px;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    
 }
-.contacto form{
+.contacto-form{
+    grid-column: 2;
+    padding: 20px;
     display: flex;
     flex-flow: column wrap;
-    width: 300px;
+    justify-content: center;
+
+}
+
+/* FOOTER */
+
+
+
+/* ESTILOS LOGIN */
+.container{
+    height: 100vh;
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    padding: 20px;
+    background-color: var(--header);
+    display: flex;
+    flex-direction: column;
 }
