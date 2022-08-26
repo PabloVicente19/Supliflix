@@ -109,17 +109,18 @@ html{
     height: auto;    
     background-color: var(--header);
     display: grid;
-    /* grid-auto-rows: 400px; */
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 
 } 
 .texto{
+    width: 99%;
+    margin: 0 auto;
     padding: 15px;
     
 }
 .texto h2, p{
     margin: 10px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -130,9 +131,32 @@ html{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-
+    text-align: left;
 }  
 
+.contacto-form input{
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    margin: 3px 0; 
+}
+.contacto-form textarea{
+    min-height: 100px;
+    max-height: 120px;
+    border-radius: 5px;
+}
+.contacto-form button{
+    height: 35px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.contacto-form button:hover{
+    background-color: #2525375d;
+    color: #FFF;
+    transition: all .3s ease-in-out;
+}
 /* FOOTER */
 .footer-container{
     background-color: var(--header);
@@ -149,8 +173,9 @@ html{
 }
 
 .form{
-    width: 300px;
-    max-width: 700px;
+    width: 99%;
+    max-width: 500px;
+    margin: 0 auto;
     height: 600px;
     padding: 20px;
     background-color: var(--header);
@@ -160,11 +185,14 @@ html{
     flex-direction: column;
 }
 .form input{
+    width: 100%;
+    max-width: 500px;
     text-indent: 20px;
-    margin: 10px;
+    margin: 10px auto;
     padding: 10px;
     height: 35px;
     border: 0;
+    border-radius: 5px;
 }
 .form button{
     border: 0;
@@ -185,4 +213,25 @@ html{
 .redes img{
     width: 30px;
     margin: 10px 20px;
+}
+
+
+/* REGISTRO */
+.registro-contenedor{
+    height: 90vh;
+}
+.registro-form{
+
+    width: 100%;
+    max-width: 500px;
+    margin: 50px  auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registro-form input{
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
 }
