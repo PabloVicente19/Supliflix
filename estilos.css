@@ -16,49 +16,80 @@ html{
     background-color: var(--fondo);
     color: #fff;
 }
-
-.navbar{
-    background-color: var(--header);
+header{
     width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
-    height: 50px; 
+} 
+.navbar{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--header);
+    height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-flow: column;
-    gap: 20px;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    
 }
 .navbar-logo{
+    padding-left: 20px;
     font-size: 1.5rem;
     font-style: oblique;
     letter-spacing: 2px;
-    align-self: flex-start;
 }
-.navbar-logo a{
+ .navbar-logo a{
     color: #FFF;
+    font-size: 1.2rem;
+} 
+.burger{
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-right: 20px;
+}
+.menu{
+    display: none;
 }
 .navbar-lista{
-    display: flex;
-    gap: 20px;
+     width: 100%;
+    max-width: 1440px; 
+    position: absolute;
+    top: 50px;
+    background-color: var(--header);
+    opacity: .9;
+    text-align: center;
+    transform: translateY(-200px);
+    z-index: 10;
+}
+.navbar-lista li:hover{
+    background-color: #484864d3 ;
+    cursor: pointer;
 }
 .navbar-lista a{
+    line-height: 50px;
     font-size: 1.2rem;
     letter-spacing: 1px;
     color: #FFF;
 }
-
+.menu:checked ~ .navbar-lista{
+    transform: translateY(0px);
+    transition: all .4s ease-in-out;
+}
 .login{
     font-size: 1.2rem;
     letter-spacing: 1px;
-
 }
 /* PELICULAS */
 .peliculas-contendor{
-   max-width: 1024px;
-   margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .peliculas-titulo{
-    padding: 20px ;
+    padding: 10px ;
     font-size: 1.5rem;
     text-align: center;
     letter-spacing: 3px;
@@ -79,7 +110,8 @@ html{
 
 /* SERIES */
 .series-contenedor{
-    max-width: 1024px;
+    width: 100%;
+    max-width: 1440px;
     margin: 0 auto; 
 }
 .series-titulo{
@@ -104,18 +136,20 @@ html{
 /* CONTACTO */
 .contacto-conteiner{
     width: 100%;
-    max-width: 1024px;
+    max-width: 1440px;
     margin: 20px auto;
-    height: auto;    
+    border-radius: 5px;
     background-color: var(--header);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 
 } 
 .texto{
     width: 99%;
     margin: 0 auto;
     padding: 15px;
+    justify-self: center;
+    align-self: center;
     
 }
 .texto h2, p{
@@ -132,6 +166,8 @@ html{
     flex-flow: column wrap;
     justify-content: center;
     text-align: left;
+    justify-self: center;
+    align-self: center;
 }  
 
 .contacto-form input{
@@ -159,10 +195,24 @@ html{
 }
 /* FOOTER */
 .footer-container{
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: var(--header);
+}
+.copy{
+    padding: 10px;
 }
 
 
+
+.footer-container{
+    text-align: center;
+    
+}
+.redes img{
+    width: 30px;
+    margin: 10px 20px;
+}
 /* ESTILOS LOGIN */
 .container{
     height: 100vh;
@@ -206,15 +256,6 @@ html{
     text-decoration: underline;
 }
 
-.footer-container{
-   text-align: center;
-
-}
-.redes img{
-    width: 30px;
-    margin: 10px 20px;
-}
-
 
 /* REGISTRO */
 .registro-contenedor{
@@ -234,4 +275,13 @@ html{
     height: 30px;
     border: 0;
     border-radius: 5px;
+}
+@media screen and (max-width: 500px) {
+    .contacto-conteiner{
+       display: flex;
+       flex-direction: column;
+    }
+    .texto h2, p{
+        font-size: 20px;
+    }
 }
