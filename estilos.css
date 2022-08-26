@@ -46,9 +46,6 @@ html{
     letter-spacing: 1px;
     color: #FFF;
 }
-.form-buscar{
-
-}
 
 .login{
     font-size: 1.2rem;
@@ -105,40 +102,41 @@ html{
     height: 300px; 
 }
 /* CONTACTO */
-.contacto-contenedor{
+.contacto-conteiner{
+    width: 100%;
     max-width: 1024px;
-    margin: 20px auto;    
+    margin: 20px auto;
+    height: auto;    
     background-color: var(--header);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-}
+    /* grid-auto-rows: 400px; */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+} 
 .texto{
     padding: 15px;
+    
 }
 .texto h2, p{
     margin: 10px;
     font-size: 1.4rem;
+    text-align: center;
 }
-.contacto{
-    max-width: 1024px;
-    margin: 0  auto;
-    margin: 20px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    
-}
+
 .contacto-form{
-    grid-column: 2;
+    width: 99%;
+    margin: 0 auto;
     padding: 20px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 
-}
+}  
 
 /* FOOTER */
-
+.footer-container{
+    background-color: var(--header);
+}
 
 
 /* ESTILOS LOGIN */
@@ -151,8 +149,40 @@ html{
 }
 
 .form{
+    width: 300px;
+    max-width: 700px;
+    height: 600px;
     padding: 20px;
     background-color: var(--header);
+    text-align: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
+}
+.form input{
+    text-indent: 20px;
+    margin: 10px;
+    padding: 10px;
+    height: 35px;
+    border: 0;
+}
+.form button{
+    border: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 7px;
+    border-radius: 5px;
+}
+.form a{
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.footer-container{
+   text-align: center;
+
+}
+.redes img{
+    width: 30px;
+    margin: 10px 20px;
 }
