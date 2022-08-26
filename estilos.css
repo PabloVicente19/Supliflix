@@ -21,6 +21,12 @@ header{
     max-width: 1440px;
     margin: 0 auto;
 } 
+img:hover{
+    border: 1px solid var(--header);
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
 .navbar{
     width: 100%;
     max-width: 1440px;
@@ -33,7 +39,7 @@ header{
     border-radius: 5px;
     position: fixed;
     top: 0;
-    
+    z-index: 99;
 }
 .navbar-logo{
     padding-left: 20px;
@@ -61,8 +67,7 @@ header{
     background-color: var(--header);
     opacity: .9;
     text-align: center;
-    transform: translateY(-200px);
-    z-index: 10;
+    transform: translateY(-250px);
 }
 .navbar-lista li:hover{
     background-color: #484864d3 ;
@@ -113,6 +118,7 @@ header{
     width: 100%;
     max-width: 1440px;
     margin: 0 auto; 
+    
 }
 .series-titulo{
     padding: 20px ;
@@ -132,6 +138,7 @@ header{
 .series img{
     width: 310px;
     height: 300px; 
+    
 }
 /* CONTACTO */
 .contacto-conteiner{
@@ -142,7 +149,6 @@ header{
     background-color: var(--header);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-
 } 
 .texto{
     width: 99%;
@@ -150,7 +156,6 @@ header{
     padding: 15px;
     justify-self: center;
     align-self: center;
-    
 }
 .texto h2, p{
     margin: 10px;
@@ -169,7 +174,6 @@ header{
     justify-self: center;
     align-self: center;
 }  
-
 .contacto-form input{
     height: 35px;
     border: 0;
@@ -202,9 +206,6 @@ header{
 .copy{
     padding: 10px;
 }
-
-
-
 .footer-container{
     text-align: center;
     
@@ -213,6 +214,7 @@ header{
     width: 30px;
     margin: 10px 20px;
 }
+
 /* ESTILOS LOGIN */
 .container{
     height: 100vh;
@@ -221,7 +223,6 @@ header{
     justify-content: center;
     align-items: center;
 }
-
 .form{
     width: 99%;
     max-width: 500px;
@@ -244,37 +245,50 @@ header{
     border: 0;
     border-radius: 5px;
 }
-.form button{
-    border: 0;
+.false-btn{
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 0.479);
     cursor: pointer;
-    font-size: 1rem;
-    padding: 7px;
+    padding: 7px  ;
     border-radius: 5px;
+    font-size: 1.1rem;
 }
-.form a{
+.false-btn:hover{
+    background-color: var(--fondo);
+    color: #FFF;
+    transition: all .3s ease-in-out;
+}
+#link-home {
     color: #FFF;
     text-decoration: underline;
+    letter-spacing: 1px;
 }
-
-
+.registro{
+    background-color: #FFF;
+    padding: 7px;
+    color: #111;
+}
 /* REGISTRO */
 .registro-contenedor{
     height: 90vh;
 }
 .registro-form{
-
     width: 100%;
     max-width: 500px;
     margin: 50px  auto;
+    padding: 20px;
+    background-color: var(--header);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .registro-form input{
+    width: 100%;
     height: 30px;
     border: 0;
     border-radius: 5px;
+    margin: 5px;
 }
 @media screen and (max-width: 500px) {
     .contacto-conteiner{
