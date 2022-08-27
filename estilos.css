@@ -35,7 +35,7 @@ img:hover{
     height: 50px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
     border-radius: 5px;
     position: fixed;
     top: 0;
@@ -60,7 +60,7 @@ img:hover{
     display: none;
 }
 .navbar-lista{
-     width: 100%;
+    width: 100%;
     max-width: 1440px; 
     position: absolute;
     top: 50px;
@@ -87,6 +87,7 @@ img:hover{
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
+
 /* PELICULAS */
 .peliculas-contendor{
     width: 100%;
@@ -110,7 +111,8 @@ img:hover{
 }
 .peliculas img{
     width: 310px;
-    height: 320px;
+    height: 350px;
+    
 }
 
 /* SERIES */
@@ -137,7 +139,7 @@ img:hover{
 }
 .series img{
     width: 310px;
-    height: 300px; 
+    height: 350px; 
     
 }
 /* CONTACTO */
