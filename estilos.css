@@ -7,6 +7,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
     font-family: 'Anek Telugu', sans-serif;
+    transition: all .4s linear;
 }
 :root{
     --fondo: #1C1C28;
@@ -19,13 +20,6 @@ html{
     max-width: 1440px;
     margin: 0 auto;
 }
-
-/* img:hover{
-    border: 1px solid var(--header);
-    transform: scale(1.03);
-    cursor: pointer;
-    transition: all .4s ease-in-out;
-} */
 
 .navbar{
     width: 100%;
@@ -90,7 +84,37 @@ html{
     font-size: 1.2rem;
     letter-spacing: 1px;
 } 
-
+.hero{
+    margin: 80px 20px;
+    height: 400px;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3),rgba(0,0,0,0.3)
+    ),url("./img/hero.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.hero h3{
+    padding: 30px;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+ 
+}
+.hero a{
+    line-height: 80px;
+    display: inline;
+    margin: 0 25px;
+    padding: 10px 25px;
+    background-color: #FFF;
+    color: #FFF;
+    background-color: gray;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+.hero a:hover{
+    background-color: var(--header);
+}
 /* PELICULAS */
 
 .peliculas-titulo{
@@ -100,6 +124,7 @@ html{
     text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
+
 }
 .peliculas{
     display: grid;
@@ -109,6 +134,7 @@ html{
 }
 .peliculas img{
     width: 100%;
+    cursor: pointer;
 } 
 
 /* SERIES */
@@ -128,6 +154,7 @@ html{
 }
 .series img{
     width: 100%;
+    cursor: pointer;
 }
 /* CONTACTO */
 .contacto-conteiner{
