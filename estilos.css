@@ -15,22 +15,21 @@
 html{
     background-color: var(--fondo);
     color: #fff;
-}
-header{
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-} 
-img:hover{
+}
+
+/* img:hover{
     border: 1px solid var(--header);
     transform: scale(1.03);
     cursor: pointer;
     transition: all .4s ease-in-out;
-}
+} */
+
 .navbar{
     width: 100%;
     max-width: 1440px;
-    margin: 0 auto;
     background-color: var(--header);
     height: 50px;
     display: flex;
@@ -39,8 +38,10 @@ img:hover{
     border-radius: 5px;
     position: fixed;
     top: 0;
-    z-index: 99;
+    z-index: 99; 
+
 }
+
 .navbar-logo{
     padding-left: 20px;
     font-size: 1.5rem;
@@ -51,6 +52,7 @@ img:hover{
     color: #FFF;
     font-size: 1.2rem;
 } 
+
 .burger{
     font-size: 1.5rem;
     cursor: pointer;
@@ -59,15 +61,15 @@ img:hover{
 .menu{
     display: none;
 }
+
 .navbar-lista{
     width: 100%;
-    max-width: 1440px; 
     position: absolute;
     top: 50px;
     background-color: var(--header);
     opacity: .9;
     text-align: center;
-    transform: translateY(-250px);
+    transform: translateY(-250px); 
 }
 .navbar-lista li:hover{
     background-color: #484864d3 ;
@@ -79,6 +81,7 @@ img:hover{
     letter-spacing: 1px;
     color: #FFF;
 }
+
 .menu:checked ~ .navbar-lista{
     transform: translateY(0px);
     transition: all .4s ease-in-out;
@@ -86,42 +89,29 @@ img:hover{
 .login{
     font-size: 1.2rem;
     letter-spacing: 1px;
-}
+} 
 
 /* PELICULAS */
-.peliculas-contendor{
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-}
+
 .peliculas-titulo{
-    padding: 10px ;
+    margin-top: 50px;
+    padding: 20px ;
     font-size: 1.5rem;
     text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #FFF;
 }
 .peliculas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    column-gap: 10px;
+    padding: 0 10px;
 }
 .peliculas img{
-    width: 310px;
-    height: 350px;
-    
-}
+    width: 100%;
+} 
 
 /* SERIES */
-.series-contenedor{
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto; 
-    
-}
 .series-titulo{
     padding: 20px ;
     font-size: 1.5rem;
@@ -131,28 +121,24 @@ img:hover{
     color: #FFF;
 }
 .series{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    column-gap: 10px;
+    padding: 0 10px;
 }
 .series img{
-    width: 310px;
-    height: 350px; 
-    
+    width: 100%;
 }
 /* CONTACTO */
 .contacto-conteiner{
-    width: 100%;
-    max-width: 1440px;
     margin: 20px auto;
     border-radius: 5px;
     background-color: var(--header);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    text-align: center;
 } 
-.texto{
+ .texto{
     width: 99%;
     margin: 0 auto;
     padding: 15px;
@@ -162,11 +148,11 @@ img:hover{
 .texto h2, p{
     margin: 10px;
     font-size: 1.2rem;
-    text-align: center;
+    
 }
 
 .contacto-form{
-    width: 99%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     display: flex;
@@ -183,6 +169,7 @@ img:hover{
     margin: 3px 0; 
 }
 .contacto-form textarea{
+    width: 99%;
     min-height: 100px;
     max-height: 120px;
     border-radius: 5px;
@@ -198,7 +185,7 @@ img:hover{
     background-color: #2525375d;
     color: #FFF;
     transition: all .3s ease-in-out;
-}
+} */
 /* FOOTER */
 .footer-container{
     max-width: 1440px;
@@ -215,6 +202,10 @@ img:hover{
 .redes img{
     width: 30px;
     margin: 10px 20px;
+}
+#git{
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 /* ESTILOS LOGIN */
@@ -292,12 +283,51 @@ img:hover{
     border-radius: 5px;
     margin: 5px;
 }
-@media screen and (max-width: 500px) {
+ @media screen and (min-width: 600px) {
+    .peliculas{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        column-gap: 10px;
+        padding: 0 15px;
+    }
+    .series{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        column-gap: 10px;
+        padding: 0 15px;
+    }
+}
+@media screen and (min-width: 650px) {
+    .peliculas{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        column-gap: 10px;
+        padding: 0 15px;
+    }
+    .series{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        column-gap: 10px;
+        padding: 0 15px;
+    }
+} 
+@media screen and (min-width: 900px) {
     .contacto-conteiner{
-       display: flex;
-       flex-direction: column;
-    }
-    .texto h2, p{
-        font-size: 20px;
-    }
+        margin: 20px auto;
+        border-radius: 5px;
+        background-color: var(--header);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        text-align: center;
+    } 
+}
+@media screen and (min-width:1200px) {
+    .contacto-conteiner{
+        margin: 20px auto;
+        border-radius: 5px;
+        background-color: var(--header);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        text-align: center;
+    } 
 }
