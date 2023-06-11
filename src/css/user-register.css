@@ -36,6 +36,9 @@
   font-weight: 600;
   border-radius: 5px;
 }
+#link-home{
+  font-size: 14px;
+}
 /* Refiere al input checkbox */
 #condiciones{
   height: 20px;

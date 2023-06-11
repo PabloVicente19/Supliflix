@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Open+Sans:wght@300;400;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -6,20 +6,24 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: "Anek Telugu", sans-serif;
+
 }
 :root {
   --fondo: #1c1c28;
   --header: #252537;
+  --white :#fff;
+  --blue:#507DBC;
+  --offGolden:#E3B23C;
+  --fontOpen: 'Open Sans', sans-serif;
+  --fontMontserrat: 'Montserrat', sans-serif;
 }
 html {
   background-color: var(--fondo);
-  color: #fff;
-  width: 100%;
   max-width: 1024px;
   margin: 0 auto;
 }
 .navbar {
+  padding: 0 20px;
   background-color: var(--header);
   height: 50px;
   display: flex;
@@ -27,54 +31,34 @@ html {
   align-items: center;
 }
 .navbar-logo {
-  padding-left: 20px;
   font-size: 1.5rem;
-  font-style: oblique;
-  letter-spacing: 2px;
 }
 .navbar-logo a {
   color: #fff;
   font-size: 1.2rem;
 }
-.burger {
+.icon-burger {
   font-size: 1.5rem;
   cursor: pointer;
   padding-right: 20px;
+  display: none !important;
 }
 .menu {
   display: none;
 }
-.navbar-lista {
-  width: 100%;
-  position: absolute;
-  top: 50px;
-  background-color: var(--header);
-  opacity: 0.9;
-  text-align: center;
-  transform: translateY(-250px);
+.navbar-list {
+  display: flex;
+  gap: 30px;
 }
-.navbar-lista li:hover {
-  background-color: #484864d3;
-  cursor: pointer;
-}
-.navbar-lista a {
-  line-height: 50px;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  color: #fff;
-}
-.menu:checked ~ .navbar-lista {
-  transform: translateY(0px);
-  transition: all 0.4s ease-in-out;
-}
-.login {
-  font-size: 1.2rem;
-  letter-spacing: 1px;
+.navbar-list-link{
+  color: aliceblue;
+  font-family: var(--fontOpen);
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 /* HERO */
-.hero {
-  margin-top: 80px;
+.hero-content{
   height: 400px;
   background-image: linear-gradient(
       0deg,
@@ -85,9 +69,30 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
 }
-.hero h3 {
+.hero-title{
+  color: var(--offGolden);
+  font-family: var(--fontMontserrat);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.hero-links-content{
+  display: flex;
+  gap: 40px;
+}
+.hero-link{
+  color: var(--white);
+  font-family: var(--fontOpen);
+  background-color: var(--blue);
+  padding: .5rem 2rem;
+  border-radius: 10px;
+}
+/* .hero h3 {
   padding: 30px;
   font-size: 1.7rem;
   letter-spacing: 2px;
@@ -106,7 +111,7 @@ html {
 }
 .hero a:hover {
   background-color: var(--header);
-}
+} */
 
 /* PELICULAS */
 .peliculas-titulo {
