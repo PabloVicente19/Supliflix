@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/user-register.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
     <title>Suplifix | Registro</title>
 </head>
 <body>
-    <main class="registro-contenedor">
+    <header>
+        <nav class="navbar">
+          <div class="navbar-logo">
+            <a href="#">
+              <i class="fa-solid fa-video">Suplifix</i>
+            </a>
+          </div>
+          <label for="check">
+            <i class="fa-solid fa-bars burger"></i>
+          </label>
+          <input class="menu" type="checkbox" id="check" />
+          <ul class="navbar-lista">
+            <li><a href="#peli">Peliculas </a></li>
+            <li><a href="#serie">Series </a></li>
+            <li><a class="login" href="login.html">Iniciar Sesion</a></li>
+            <li><a href="./registro.html">Registrate</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+    <section class="user-register-container">
+
         <form action="" class="registro-form">
             <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre">
@@ -22,6 +51,6 @@
                 <input type="checkbox" id="condiciones" class="check-condiciones">
             <a class="false-btn" href="./index.html">Crear Cuenta</a>
         </form>
-    </main>
+    </section> 
 </body>
 </html>
