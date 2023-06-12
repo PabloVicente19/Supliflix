@@ -117,7 +117,7 @@ html {
 .movies-content {
 	margin: 10px 0px;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	gap: 10px;
 }
 .movie {
@@ -130,7 +130,7 @@ html {
 	border-radius: 0.5rem;
 }
 .movie:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 	transition: 0.3s transform;
 }
 
@@ -150,7 +150,7 @@ html {
 .series-content {
 	margin: 10px 0;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	gap: 10px;
 }
 /* Box de cada serie */
@@ -165,7 +165,7 @@ html {
 	border-radius: 0.5rem;
 }
 .serie:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 	transition: 0.3s transform;
 }
 
@@ -313,57 +313,14 @@ html {
 	.navbar-list-link {
 		color: var(--bgLinkedin);
 	}
-}
-/* 
-@media screen and (min-width: 600px) {
-  .peliculas {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    column-gap: 10px;
-    padding: 0 15px;
+
+  .movies-content {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   }
-  .series {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    column-gap: 10px;
-    padding: 0 15px;
+  .series-content{
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+
   }
+
 }
 
-@media screen and (min-width: 650px) {
-  .peliculas {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    column-gap: 10px;
-    padding: 0 15px;
-  }
-  .series {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    column-gap: 10px;
-    padding: 0 15px;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .contacto-conteiner {
-    margin: 20px auto;
-    border-radius: 5px;
-    background-color: var(--header);
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contacto-conteiner {
-    margin: 20px auto;
-    border-radius: 5px;
-    background-color: var(--header);
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    text-align: center;
-  }
-}
-*/
