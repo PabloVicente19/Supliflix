@@ -1,172 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="./src/css/styles.css" />
-    <!-- FONT AWESOME -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    />
-    <title>suplifix</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="navbar-logo">
-          <a href="#">
-            <i class="fa-solid fa-video">Suplifix</i>
-          </a>
-        </div>
-        <label for="check">
-          <i class="fa-solid fa-bars icon-burger"></i>
-        </label>
-        <input class="menu" type="checkbox" id="check" />
-        <ul class="navbar-list">
-          <li><a class="navbar-list-link" href="#peli">Peliculas </a></li>
-          <li><a class="navbar-list-link" href="#serie">Series </a></li>
-          <li><a class="navbar-list-link" href="login.html">Iniciar Sesion</a></li>
-          <li><a class="navbar-list-link" href="./registro.html">Registrate</a></li>
-        </ul>
-      </nav>
-      <section class="hero-content">
-        <h2 class="hero-title">Disfuta De Peliculas y Series Gratis</h2>
-        <div class="hero-links-content">
-          <a class="hero-link" href="#peli"> Peliculas </a>
-          <a class="hero-link" href="#serie"> Series </a>
-        </div>
-      </section>
-    </header>
-    <main>
-      <!-- PELICULAS -->
-      <section>
-        <div class="peliculas-titulo">
-          <h3>Peliculas</h3>
-        </div>
-        <div class="peliculas">
-          <div class="pelicula">
-            <img src="./assets/images/peliculas/el señor de la guerra.jpg" alt="" />
-          </div>
 
-          <div class="pelicula">
-            <img src="./assets/images/peliculas/avengers.jpeg" alt="" />
-          </div>
-          <div class="pelicula">
-            <img src="./assets/images/peliculas/mortal-kombat.jpeg" alt="" />
-          </div>
-          <div class="pelicula">
-            <img src="./assets/images/peliculas/nadie.jpg" alt="" />
-          </div>
-          <div class="pelicula">
-            <img
-              src="./assets/images/peliculas/harry-potter y las reloquis de la muerte.jpeg"
-              alt=""
-            />
-          </div>
-          <div class="pelicula">
-            <img src="./assets/images/peliculas/animales-fantasticos.jpeg" alt="" />
-          </div>
-          <div class="pelicula">
-            <img src="./assets/images/peliculas/thor.jpg" alt="" />
-          </div>
-          <div class="pelicula">
-            <img src="./assets/images/peliculas/rescatando-al-soldado.jpg" alt="" />
-          </div>
-          <div class="pelicula">
-            <img src="./assets/images/peliculas/nueve-reinas.jpg" alt="" />
-          </div>
-          <div class="pelicula">
-            <img src="./assets/images/peliculas/la dama de negro.jpg" alt="" />
-          </div>
-          <div class="pelicula">
-            <img src="./assets/images/peliculas/sopranos.jpg" alt="" />
-          </div>
-          <div class="pelicula">
-            <img src="./assets/images/peliculas/jhon carter.jpg" alt="" />
-          </div>
-        </div>
-      </section>
-      <!-- SERIES  -->
-      <section>
-        <div class="series-titulo">
-          <h3 id="serie">series</h3>
-        </div>
-        <div class="series">
-          <div class="serie">
-            <img src="./assets/images/series/got.jpeg" alt="Game of Thrones" />
-          </div>
-          <div class="serie">
-            <img src="./assets/images/series/house of the dradons.jpg" alt="" />
-          </div>
-          <div class="serie">
-            <img src="./assets/images/series/black-list.jpg" alt="" />
-          </div>
-          <div class="serie">
-            <img src="./assets/images/series/saul.jpeg" alt="" />
-          </div>
-          <div class="serie">
-            <img src="./assets/images/series/utred.jpg" alt="" />
-          </div>
-          <div class="serie">
-            <img src="./assets/images/series/vikingos.jpg" alt="" />
-          </div>
-          <div class="serie">
-            <img src="./assets/images/series/the-strain.jpg" alt="" />
-          </div>
-          <div class="serie">
-            <img src="./assets/images/series/kingdom.jpg" alt="" />
-          </div>
-          <div class="serie">
-            <img src="./assets/images/series/kingsfall.jpg" alt="" />
-          </div>
-          <div class="serie">
-            <img src="./assets/images/series/suits.jpg" alt="" />
-          </div>
-          <div class="serie">
-            <img src="./assets/images/series/murder.jpg" alt="" />
-          </div>
-          <div class="serie">
-            <img src="./assets/images/series/anarqui_.jpg" alt="" />
-          </div>
-        </div>
-      </section>
-      <!-- CONTACTO -->
-      <section class="contacto-conteiner">
-        <div class="texto">
-          <h2>Contactanos</h2>
-          <p>
-            Conocemos tu necesidad de encontrar una película online doblada o
-            subtitulada entre las más diversas plataformas de streaming como
-            Netflix, YouTube, Amazon Prime Video, Apple TV y otras. En Suplifix
-            nuestra misión es ayudarte a encontrar las mejores películas en alta
-            calidad (HD) para que las veas online, en la comodidad de tu casa y
-            en el servicio de streaming que prefieras.
-          </p>
-        </div>
-        <form class="contacto-form" action="">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" />
-          <label for="email">Email:</label>
-          <input type="email" id="email" />
-          <label for="texto">Mensaje:</label>
-          <textarea id="texto" cols="30" rows="10"></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
-    <footer class="footer-container">
-      <section class="copy">&copy; Creado por Pablo Vicente</section>
-      <section class="redes">
-        <a href="https://www.linkedin.com/in/pablo-martin-vicente-70892713b/">
-          <img src="./img/linkedin.png" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/css/styles.css" />
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>suplifix | Home</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="#">
+          <i class="fa-solid fa-video">Suplifix</i>
         </a>
-        <a href="https://github.com/PabloVicente19">
-          <img id="git" src="./img/github.png" alt="" />
-        </a>
-      </section>
-    </footer>
-  </body>
+      </div>
+      <label for="check">
+        <i class="fa-solid fa-bars icon-burger"></i>
+      </label>
+      <input class="menu" type="checkbox" id="check" />
+      <ul class="navbar-list">
+        <li><a class="navbar-list-link" href="#">Peliculas </a></li>
+        <li><a class="navbar-list-link" href="#">Series </a></li>
+        <li><a class="navbar-list-link" href="login.html">Iniciar Sesion</a></li>
+        <li><a class="navbar-list-link" href="./registro.html">Registrate</a></li>
+      </ul>
+    </nav>
+    <section class="hero-content ">
+      <h2 class="hero-title animate__animated animate__fadeInDown">Disfuta De Peliculas y Series Gratis</h2>
+      <div class="hero-links-content">
+        <a class="hero-link animate__animated animate__fadeInLeft" href="#peli"> Peliculas </a>
+        <a class="hero-link animate__animated animate__fadeInRight" href="#serie"> Series </a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- PELICULAS -->
+    <section class="movies-container">
+      <h3 class="movies-title">Peliculas</h3>
+      <div class="movies-content">
+        <div class="movie">
+          <img class="movie-img" src="./assets/images/peliculas/el señor de la guerra.jpg" alt="" />
+        </div>
+        <div class="movie ">
+          <img class="movie-img" src="./assets/images/peliculas/avengers.jpeg" alt="" />
+        </div>
+        <div class="movie ">
+          <img class="movie-img" src="./assets/images/peliculas/mortal-kombat.jpeg" alt="" />
+        </div>
+        <div class="movie ">
+          <img class="movie-img" src="./assets/images/peliculas/nadie.jpg" alt="" />
+        </div>
+        <div class="movie ">
+          <img class="movie-img" src="./assets/images/peliculas/harry-potter y las reloquis de la muerte.jpeg" alt="" />
+        </div>
+        <div class="movie ">
+          <img class="movie-img" src="./assets/images/peliculas/animales-fantasticos.jpeg" alt="" />
+        </div>
+        <div class="movie ">
+          <img class="movie-img" src="./assets/images/peliculas/thor.jpg" alt="" />
+        </div>
+        <div class="movie ">
+          <img class="movie-img" src="./assets/images/peliculas/rescatando-al-soldado.jpg" alt="" />
+        </div>
+        <div class="movie ">
+          <img class="movie-img" src="./assets/images/peliculas/nueve-reinas.jpg" alt="" />
+        </div>
+        <div class="movie ">
+          <img class="movie-img" src="./assets/images/peliculas/la dama de negro.jpg" alt="" />
+        </div>
+        <div class="movie ">
+          <img class="movie-img" src="./assets/images/peliculas/sopranos.jpg" alt="" />
+        </div>
+        <div class="movie ">
+          <img class="movie-img" src="./assets/images/peliculas/jhon carter.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- SERIES  -->
+    <section class="series-container">
+      <h3 class="series-title">series</h3>
+      <div class="series-content">
+        <div class="serie">
+          <img class="serie-img" src="./assets/images/series/got.jpeg" alt="Game of Thrones" />
+        </div>
+        <div class="serie">
+          <img class="serie-img" src="./assets/images/series/house of the dradons.jpg" alt="" />
+        </div>
+        <div class="serie">
+          <img class="serie-img" src="./assets/images/series/black-list.jpg" alt="" />
+        </div>
+        <div class="serie">
+          <img class="serie-img" src="./assets/images/series/saul.jpeg" alt="" />
+        </div>
+        <div class="serie">
+          <img class="serie-img" src="./assets/images/series/utred.jpg" alt="" />
+        </div>
+        <div class="serie">
+          <img class="serie-img" src="./assets/images/series/vikingos.jpg" alt="" />
+        </div>
+        <div class="serie">
+          <img class="serie-img" src="./assets/images/series/the-strain.jpg" alt="" />
+        </div>
+        <div class="serie">
+          <img class="serie-img" src="./assets/images/series/kingdom.jpg" alt="" />
+        </div>
+        <div class="serie">
+          <img class="serie-img" src="./assets/images/series/kingsfall.jpg" alt="" />
+        </div>
+        <div class="serie">
+          <img class="serie-img" src="./assets/images/series/suits.jpg" alt="" />
+        </div>
+        <div class="serie">
+          <img class="serie-img" src="./assets/images/series/murder.jpg" alt="" />
+        </div>
+        <div class="serie">
+          <img class="serie-img" src="./assets/images/series/anarqui_.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- CONTACTO -->
+    <section class="contact-container">
+      <div class="contact-text-content">
+        <h2 class="contact-text-title">Contactanos</h2>
+        <p class="contact-text-description">
+          Conocemos tu necesidad de encontrar una película online doblada o
+          subtitulada entre las más diversas plataformas de streaming como
+          Netflix, YouTube, Amazon Prime Video, Apple TV y otras. En Suplifix
+          nuestra misión es ayudarte a encontrar las mejores películas en alta
+          calidad (HD) para que las veas online, en la comodidad de tu casa y
+          en el servicio de streaming que prefieras.
+        </p>
+      </div>
+      <form class="contact-form-content">
+        <label class="contact-form-label" for="nombre">Nombre:</label>
+        <input class="contact-form-input" type="text" id="nombre" />
+        <label class="contact-form-label" for="email">Email:</label>
+        <input class="contact-form-input" type="email" id="email" />
+        <label class="contact-form-label" for="texto">Mensaje:</label>
+        <textarea class="contact-form-textarea" id="texto" cols="30" rows="10"></textarea>
+        <button class="contact-form-btn" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer-container">
+    <section class="footer-socialsMedia-content redes">
+      <a href="https://www.linkedin.com/in/pablo-martin-vicente-70892713b/" target="_blank">
+        <i class="fa-brands fa-github footer-icon"></i>
+      </a>
+      <a href="https://github.com/PabloVicente19" target="_blank">
+        <i class="fa-brands fa-linkedin footer-icon"></i>
+      </a>
+    </section>
+    <section class="copy">&copy; Creado por Pablo Vicente</section>
+  </footer>
+</body>
+
 </html>
