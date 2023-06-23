@@ -89,6 +89,7 @@ html {
 	font-family: var(--fontMontserrat);
 	font-weight: 600;
 	letter-spacing: 2px;
+	text-align: center;
 }
 .hero-links-content {
 	display: flex;
@@ -340,5 +341,25 @@ html {
 	}
 	.series-content {
 		grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+	}
+}
+@media screen and (max-width: 400px) {
+	.hero-title {
+		text-align: center;
+		font-size: 1.2rem;
+	}
+	.contact-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.contact-text-title {
+		font-size: 1.5rem;
+	}
+	.contact-text-description {
+		font-size: 0.9rem;
+	}
+	.hero-link {
+		padding: 0.5rem 1rem;
+		font-size: 14px;
 	}
 }
