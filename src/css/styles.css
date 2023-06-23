@@ -65,6 +65,7 @@ html {
 	color: var(--offGolden);
 	transition: 0.2s color;
 }
+
 /* HERO */
 .hero-content {
 	height: 400px;
@@ -99,6 +100,8 @@ html {
 	background-color: var(--blue);
 	padding: 0.5rem 2rem;
 	border-radius: 10px;
+	letter-spacing: 1px;
+	font-weight: 600;
 }
 
 /* Seccion de Peliculas */
@@ -109,8 +112,8 @@ html {
 .movies-title {
 	color: var(--white);
 	margin-left: 10px;
-	font-size: 1.5rem;
-	text-align: start;
+	font-size: 2rem;
+	text-align: center;
 	font-family: var(--fontMontserrat);
 	font-weight: 500;
 }
@@ -144,7 +147,8 @@ html {
 	color: var(--white);
 	font-family: var(--fontMontserrat);
 	font-weight: 500;
-	font-size: 1.5rem;
+	font-size: 2rem;
+	text-align: center;
 }
 /* Contenedor de las series */
 .series-content {
@@ -187,10 +191,13 @@ html {
 .contact-text-title {
 	font-size: 2rem;
 	font-family: var(--fontMontserrat);
+	text-align: center;
+	margin-bottom: 15px;
 }
 .contact-text-description {
 	font-size: 1.2rem;
 	font-family: var(--fontOpen);
+	text-align: center;
 }
 /* Contenedor del formulario */
 .contact-form-content {
@@ -269,6 +276,20 @@ html {
 .footer-socialsMedia-content a:nth-child(2) {
 	color: var(--bgLinkedin);
 }
+
+/* MODAL DEL LOGIN */
+.modal-login {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 300px;
+	height: 400px;
+	background-color: var(--white);
+	z-index: 9;
+}
 @media screen and (max-width: 700px) {
 	/* Implementacion del menu hamburguesa */
 	.navbar {
@@ -314,13 +335,10 @@ html {
 		color: var(--bgLinkedin);
 	}
 
-  .movies-content {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  }
-  .series-content{
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-
-  }
-
+	.movies-content {
+		grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+	}
+	.series-content {
+		grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+	}
 }
-
