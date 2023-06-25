@@ -1,0 +1,97 @@
+@import url("./styles.css");
+
+.navbar-register {
+	min-height: 60px;
+	justify-content: center;
+	border-end-end-radius: 1.5rem;
+	border-end-start-radius: 1.5rem;
+}
+.user-register-container {
+	height: calc(100vh - 60px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-register-container {
+	width: min(600px, 90%);
+	background-color: var(--header);
+	padding: 2rem;
+	display: flex;
+	gap: 20px;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.3);
+	border-radius: 10px;
+	flex-wrap: wrap;
+}
+.form-register-title {
+	color: var(--white);
+	font-family: var(--fontMontserrat);
+	flex-basis: 100%;
+	text-align: center;
+}
+.form-field {
+	width: min(250px, 50%);
+	display: flex;
+}
+.input {
+	width: 100%;
+	outline: none;
+	border: none;
+	padding: 0.8rem 0;
+	text-indent: 20px;
+	font-size: 1rem;
+	font-weight: 600;
+	border-radius: 5px;
+	font-family: var(--fontOpen);
+}
+/* div que contiene el input del email */
+.form-field:nth-child(6) {
+	flex-basis: 100%;
+	flex-direction: column;
+}
+.form-field:nth-child(7) {
+	flex-basis: 100%;
+	width: 50%;
+	color: var(--white);
+	justify-content: center;
+	align-items: center;
+	font-family: var(--fontOpen);
+}
+
+#link-home {
+	font-size: 14px;
+	color: var(--white);
+	text-decoration: underline;
+}
+.form-register-link {
+	background-color: aliceblue;
+	padding: 0.5rem 2rem;
+	font-size: 1.1rem;
+	border-radius: 1rem;
+	font-weight: 600;
+	font-family: var(--fontMontserrat);
+	color: var(--bgGit);
+}
+.form-register-link:hover{
+	background-color: #f0f8ffbd;
+}
+.form-conditions{
+	width: 200px !important;
+	text-align: center;
+}
+.form-conditions a{
+	display: block;
+}
+/* Tamañano 650px */
+@media screen and (max-width: 650px) {
+	.form-register-container {
+		flex-direction: column;
+	}
+	.form-field {
+		width: 100%;
+	}
+	.input {
+		width: 100%;
+	}
+}

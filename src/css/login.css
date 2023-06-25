@@ -1,0 +1,32 @@
+@import "./styles.css";
+.user-register-container {
+	height: 90vh;
+}
+.form-register-container {
+	flex-direction: column;
+}
+.form-field {
+	width: 100%;
+}
+.user-register {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+}
+.user-register-title,
+.user-register-link {
+	color: var(--white);
+	font-family: var(--fontMontserrat);
+	text-align: center;
+}
+.user-register-link {
+	text-decoration: underline;
+}
+.form-register-link{
+	color: var(--bgGit);
+}
+.form-register-link:hover{
+	background-color: #f0f8ffbd;
+}

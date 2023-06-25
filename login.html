@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos.css">
-    <title>suplifix | login</title>
-</head>
-<body>
-    <main class="container">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/user-register.css">
+    <link rel="stylesheet" href="./src/css/login.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 
-        <form class="form">
-            <h2>Inicia Sesion con tu Correo</h2>
-            <label for="email"></label>
-            <input type="text" id="email" placeholder="Correo Electronico">
-            <label for="contraseña"></label>
-            <input type="password" id="contraseña" placeholder="Contraseña">
-            <a class="false-btn" href="./index.html">Iniciar Sesion</a>
-            <p> Aun no sos usuario de <a id="link-home" href="index.html">suplifix</a></p>
-            <a class="registro" href="./registro.html">Registrate</a>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="./index.html">
+                    <i class="fa-solid fa-video">Suplifix</i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section class="user-register-container">
+        <form class="form-register-container">
+            <h2 class="form-register-title">Iniciar sesion</h2>
+            <div class="form-field">
+                <input type="email" id="email" placeholder="Email" class="input">
+            </div>
+            <div class="form-field">
+                <input type="password" id="contraseña" placeholder="Contraseña" class="input">
+            </div>
+            <a class="form-register-link" href="./index.html">Iniciar Sesion</a>
+            <div class="user-register">
+                <h3 class="user-register-title">¿No sos usuario de Supliflix?</h3>
+                <a class="user-register-link" href="./registro.html">Registrate</a>
+            </div>
         </form>
- 
-    </main>
+    </section>
+
 </body>
+
 </html>
