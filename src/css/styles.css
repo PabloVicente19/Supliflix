@@ -292,6 +292,8 @@ html {
 	background-color: var(--white);
 	z-index: 9;
 }
+
+/* Responsive TABLET */
 @media screen and (max-width: 700px) {
 	/* Implementacion del menu hamburguesa */
 	.navbar {
@@ -339,12 +341,12 @@ html {
 		color: var(--bgLinkedin);
 	}
 
-	.movies-content {
+	.movies-content,
+  .series-content  {
 		grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-	}
-	.series-content {
-		grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-	}
+    place-items: center;
+  }
+	
 }
 @media screen and (max-width: 400px) {
 	.navbar-list{
