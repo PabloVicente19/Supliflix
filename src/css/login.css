@@ -24,3 +24,9 @@
 .user-register-link {
 	text-decoration: underline;
 }
+.form-register-link{
+	color: var(--bgGit);
+}
+.form-register-link:hover{
+	background-color: #f0f8ffbd;
+}

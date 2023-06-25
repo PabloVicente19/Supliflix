@@ -240,6 +240,7 @@ html {
 	height: 35px;
 	margin: 10px 0;
 	border-radius: 5px;
+	border: 0;
 	cursor: pointer;
 	font-size: 1rem;
 	font-weight: 700;
@@ -320,9 +321,11 @@ html {
 		justify-content: center;
 		align-items: center;
 		gap: 80px;
+		border-top-right-radius: 2rem;
+		border-bottom-right-radius: 2rem;
 	}
 	.navbar-list-link {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 	.navbar-list-link:hover {
 		padding-left: 20px;
@@ -344,6 +347,13 @@ html {
 	}
 }
 @media screen and (max-width: 400px) {
+	.navbar-list{
+		border-top-right-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+	}
+	.navbar-list-link{
+		font-size: 1rem;
+	}
 	.hero-title {
 		text-align: center;
 		font-size: 1.2rem;
@@ -361,5 +371,19 @@ html {
 	.hero-link {
 		padding: 0.5rem 1rem;
 		font-size: 14px;
+	}
+	.movies-container,
+	.series-container{
+		padding: 6px;
+	}
+	.movie,
+	.serie{
+		width: 140px;
+	}
+	.movie-img,
+	.serie-img{
+		width: 100%;
+		object-fit: cover;
+
 	}
 }

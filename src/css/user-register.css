@@ -71,8 +71,18 @@
 	border-radius: 1rem;
 	font-weight: 600;
 	font-family: var(--fontMontserrat);
+	color: var(--bgGit);
 }
-
+.form-register-link:hover{
+	background-color: #f0f8ffbd;
+}
+.form-conditions{
+	width: 200px !important;
+	text-align: center;
+}
+.form-conditions a{
+	display: block;
+}
 /* Tamañano 650px */
 @media screen and (max-width: 650px) {
 	.form-register-container {
